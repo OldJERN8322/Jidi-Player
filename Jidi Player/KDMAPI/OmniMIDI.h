@@ -16,6 +16,17 @@ KDMAPI_ONLYSTRUCTS = Used by MIDI apps who want to use the KDMAPI functions
 #define KDMAPI WINAPI
 #endif
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+	int InitializeKDMAPIStream(void);
+	void SendDirectData(unsigned long data);
+
+#ifdef __cplusplus
+}
+#endif
+
 // KDMAPI version
 #define CUR_MAJOR	4
 #define CUR_MINOR	1

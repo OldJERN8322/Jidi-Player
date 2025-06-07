@@ -6,10 +6,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#pragma comment(lib, "OmniMIDI_Win64.lib")
-
 #include <OmniMIDI.h>
 #include <MidiFile.h>
+#include <iostream>
 
 // Graphics libraries (Need ig but. Coming soon)
 //#include <d3d11.h>
@@ -18,9 +17,12 @@
 //#include <dxdiag.h>
 //#include <d3dcompiler.h>
 
+#pragma comment(lib, "OmniMIDI_Win64.lib")
 using namespace std;
 
+
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow) {
+
 	InitializeKDMAPIStream();
 	cout << "Hello World!" << endl;
 	Sleep(400);
